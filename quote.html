@@ -198,6 +198,11 @@
               <input type="text" class="form-control bg-light border-0" id="userName" placeholder="Inserisci il tuo nome" required>
           </div>
 
+          <div class="mb-3">
+            <label for="email" class="form-label text-white">email</label>
+            <input type="text" class="form-control bg-light border-0" id="email" placeholder="Inserisci la tua email" required>
+        </div>
+
           <!-- Selezione Servizio -->
           <div class="mb-3">
               <label for="serviceSelect" class="form-label text-white">Seleziona il Servizio</label>
@@ -223,7 +228,7 @@
           </div>
 
           <!-- Messaggio di conferma dopo invio -->
-          <div id="successMessage" style="display:none; color: green; text-align: center; margin-top: 10px;">
+          <div id="successMessage" style="display:none; color: #ffffff; text-align: center; margin-top: 10px;">
               ✅ Richiesta inviata con successo!
           </div>
       </form>
@@ -241,18 +246,28 @@
       sendEmail();
   });
 
+  function capitalizeWords(input) {
+      input.value = input.value.replace(/\b\w/g, function(char) {
+          return char.toUpperCase();
+      });
+  }
+
   function sendEmail() {
-      let userName = document.getElementById("userName").value.trim();
+      let userNameInput = document.getElementById("userName");
+      capitalizeWords(userNameInput); // Capitalizza il nome prima di inviarlo
+      let userName = userNameInput.value.trim();
+      let email = document.getElementById("email").value.trim();
       let selectedService = document.getElementById("serviceSelect").value;
       let userMessage = document.getElementById("userMessage").value.trim();
 
-      if (!userName || !selectedService) {
+      if (!userName || !email || !selectedService) {
           alert("Per favore, compila tutti i campi obbligatori.");
           return;
       }
 
       let templateParams = {
           user_name: userName,
+          user_email: email,
           selected_service: selectedService,
           user_message: userMessage
       };
@@ -267,7 +282,13 @@
               alert("Si è verificato un errore nell'invio della richiesta.");
           });
   }
+
+  // Applica automaticamente la capitalizzazione mentre si digita
+  document.getElementById("userName").addEventListener("input", function() {
+      capitalizeWords(this);
+  });
 </script>
+
 
           </div>
       </div>
