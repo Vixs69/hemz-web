@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>hemz - human emulators</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- Aggiornati keywords e description per il brand hemz -->
+  <meta content="hemz, human emulators, chatbot, AI, automazione, soluzioni digitali" name="keywords">
+  <meta content="hemz - human emulators è una startup innovativa che trasforma la comunicazione aziendale con agenti AI capaci di automatizzare processi e migliorare l'efficienza." name="description">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Override dei colori in linea con la brand palette -->
+  <style>
+    :root {
+      --primary-color: #326898;
+      --secondary-color: #f6fafb;
+    }
+    .bg-primary {
+      background-color: var(--primary-color) !important;
+    }
+    .text-primary {
+      color: var(--primary-color) !important;
+    }
+    .bg-light {
+      background-color: var(--secondary-color) !important;
+    }
+  </style>
+
+  <link href="https://fonts.cdnfonts.com/css/glacial-indifference" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+    <div class="row gx-0">
+      <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+        <div class="d-inline-flex align-items-center" style="height: 45px;">
+          <!-- Aggiornato indirizzo, telefono ed email -->
+          <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Via Giolitti 63, Pesaro, PU, Italia</small>
+          <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+39 342 507 0077</small>
+          <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@hemz.eu</small>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center text-lg-end">
+        <div class="d-inline-flex align-items-center" style="height: 45px;">
+                          <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a> -->
+                          <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a> -->
+          <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/company/hemz.it/" target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
+          <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a> -->
+                          <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Topbar End -->
+
+  <!-- Navbar & Carousel Start -->
+  <div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+      <!-- Modificato il brand -->
+                      <!-- <a href="index.html" class="navbar-brand p-0">
+                        <h1 class="m-0"><i class="fa fa-robot me-2"></i>hemz - human emulators</h1>
+                      </a> -->
+      <a href="index.html" class="navbar-brand p-0">
+        <h1 class="m-0 d-inline" font-weight="normal" style="font-family: 'Glacial Indifference', sans-serif;">HEMZ</h1> 
+      </a>       
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">Chi siamo</a>
+          <a href="service.html" class="nav-item nav-link">Servizi</a>
+          <div class="nav-item dropdown">
+         <!--  <a href="blog.html" class="nav-item nav-link">Blog</a>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pagine</a>
+            <div class="dropdown-menu m-0">
+              <a href="price.html" class="dropdown-item">Piano prezzi</a> -->
+                                            <!--  <a href="feature.html" class="dropdown-item">Our Features</a>
+                                              <a href="team.html" class="dropdown-item">Membri del team</a>
+                                            <a href="testimonial.html" class="dropdown-item">Testimonial</a> -->
+             <!--  <a href="quote.html" class="dropdown-item">Richiedi Demo</a>
+            </div> -->
+          </div>
+          <!-- <a href="contact.html" class="nav-item nav-link">Contatti</a> -->
+        </div> 
+                                            <!-- <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button> -->
+        <!-- Azione modificata: invece di "Download Pro Version" -->
+        <a href="quote.html" class="btn btn-primary py-2 px-4 ms-3">Comincia ora</a>
+      </div>
+    </nav>
+
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="w-100" src="img/carousel-1.jpg" alt="hemz solution">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 900px;">
+              <h5 class="text-white text-uppercase mb-3 animated slideInDown">efficienza, affidabilità</h5>
+              <h1 class="display-1 text-white mb-md-4 animated zoomIn">Assumi dipendenti infallibili, attivi 24/7</h1>
+              <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Scopri di più</a>
+              <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contattatci</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="w-100" src="img/carousel-2.jpg" alt="hemz chatbot">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 900px;">
+              <h5 class="text-white text-uppercase mb-3 animated slideInDown">Automazione, Innovazione, Crescita</h5>
+              <h1 class="display-1 text-white mb-md-4 animated zoomIn">Automatizza i tuoi processi grazie all'IA</h1>
+              <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Scopri di più</a>
+              <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contattaci</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="w-100" src="img/carousel-2.jpg" alt="hemz chatbot">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 900px;">
+              <h5 class="text-white text-uppercase mb-3 animated slideInDown">Tempo libero, crescita</h5>
+              <h1 class="display-1 text-white mb-md-4 animated zoomIn">Libera il tuo tempo e fai crescere il tuo business</h1>
+              <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Scopri di più</a>
+              <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contattaci</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- Navbar & Carousel End -->
+
+  <!-- Full Screen Search Start -->
+          <!-- <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                  <div class="input-group" style="max-width: 600px;">
+                    <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                    <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+  <!-- Full Screen Search End -->
+
+  <!-- Facts Start -->
+                          <!-- <div class="container-fluid facts py-5 pt-lg-0">
+                            <div class="container py-5 pt-lg-0">
+                              <div class="row gx-0">
+                                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                                  <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                                    <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                                      <i class="fa fa-users text-primary"></i>
+                                    </div>
+                                    <div class="ps-4">
+                                      <h5 class="text-white mb-0">Happy Clients</h5>
+                                      <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                                  <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                                    <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                                      <i class="fa fa-check text-white"></i>
+                                    </div>
+                                    <div class="ps-4">
+                                      <h5 class="text-primary mb-0">Projects Done</h5>
+                                      <h1 class="mb-0" data-toggle="counter-up">12345</h1>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                                  <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                                    <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                                      <i class="fa fa-award text-primary"></i>
+                                    </div>
+                                    <div class="ps-4">
+                                      <h5 class="text-white mb-0">Win Awards</h5>
+                                      <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div> -->
+  <!-- Facts End -->
+
+  <!-- About Start -->
+  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-7">
+          <div class="section-title position-relative pb-3 mb-5">
+            <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+            <h1 class="mb-0">L'IA al lavoro per la crescita della tua azienda</h1>
+          </div>
+          <p class="mb-4">
+            Da semplici attività amministrative fino a processi di analisi dati avanzati, i nostri agenti AI sono in grado di svolgere autonomamente lavori che tradizionalmente richiedevano intere giornate. Dalla piccola impresa in rapida espansione alla grande realtà che punta all’ottimizzazione continua, Hemz offre soluzioni su misura per ogni esigenza.
+          </p>
+          <div class="row g-0 mb-3">
+            <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+              <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Ottimizzazione e Scalabilità</h5>
+              <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Soluzioni Tailor-Made</h5>
+            </div>
+            <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+              <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Investimento Intelligente</h5>
+              <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Risultati Tangibili</h5>
+            </div>
+          </div>
+          
+          <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Richiedi una Demo</a>
+        </div>
+        <div class="col-lg-5" style="min-height: 500px;">
+          <div class="position-relative h-100">
+            <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/about.jpg" style="object-fit: cover;" alt="hemz team">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- Features Start -->
+  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+        <h5 class="fw-bold text-primary text-uppercase">Perché scegliere hemz</h5>
+        <h1 class="mb-0">Agenti intelligenti per un futuro più intelligente</h1>
+      </div>
+      <div class="row g-5">
+        <!-- Colonna di Sinistra: 2 Features -->
+        <div class="col-lg-4">
+          <div class="row g-5">
+            <!-- Apprendimento Continuo -->
+            <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+              <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <i class="fa fa-brain text-white"></i>
+              </div>
+              <h4>Apprendimento Continuo</h4>
+              <p class="mb-0">
+                I nostri agenti AI apprendono continuamente dai tuoi processi e interazioni, diventando sempre più efficienti e riducendo progressivamente il carico di lavoro umano.
+              </p>
+            </div>
+            <!-- Riduzione Drastica dei Tempi -->
+            <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
+              <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <i class="fa fa-clock text-white"></i>
+              </div>
+              <h4>Riduzione Drastica dei Tempi</h4>
+              <p class="mb-0">
+                Operazioni che prima richiedevano giorni possono essere svolte in poche ore o addirittura minuti aumentando la produttività aziendale e accelerando il time-to-market dei tuoi servizi.
+              </p>
+            </div>
+          
+            <!-- Training: Garanzia di Successo -->
+            <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
+              <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <i class="fa fa-users text-white"></i>
+              </div>
+              <h4>Training: Garanzia di Successo</h4>
+              <p class="mb-0">
+                Offriamo training pratico e continuo, così che i dipendenti si sentano a loro agio con
+                i nuovi strumenti per massimizzare i risultati
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonna Centrale: Immagine -->
+        <div class="col-lg-4 wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
+          <div class="position-relative h-100">
+            <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="img/feature.jpg" style="object-fit: cover;" alt="hemz feature">
+          </div>
+        </div>
+
+        <!-- Colonna di Destra: 3 Features -->
+        <div class="col-lg-4">
+          <div class="row g-5">
+            <!-- Scalabilità senza Limiti -->
+            <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
+              <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <i class="fa fa-expand-arrows-alt text-white"></i>
+              </div>
+              <h4>Scalabilità senza Limiti</h4>
+              <p class="mb-0">
+                Automatizzi i processi senza bisogno di assumere nuovo personale, permettendoti di crescere rapidamente, ridurre i costi fissi e ottimizzare le risorse.
+              </p>
+            </div>
+            <!-- Integrazione Profonda -->
+            <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
+              <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <i class="fa fa-network-wired text-white"></i>
+              </div>
+              <h4>Integrazione Profonda</h4>
+              <p class="mb-0">
+                I nostri agenti AI si collegano ai tuoi sistemi esistenti (ERP, CRM, Database) per un flusso di lavoro automatizzato, eliminando salti tra piattaforme e garantendo dati unificati e processi fluidi.
+              </p>
+            </div>
+            <!-- Personalizzazione Totale -->
+            <div class="col-12 wow zoomIn" data-wow-delay="1.0s">
+              <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <i class="fa fa-tools text-white"></i>
+              </div>
+              <h4>Personalizzazione Totale</h4>
+              <p class="mb-0">
+                Ogni soluzione è progettata su misura per il tuo settore e i tuoi processi, adattandosi perfettamente al tuo modo di lavorare senza richiedere modifiche alla tua operatività.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Features End -->
+
+<!-- UL Timeline Zig-Zag Start -->
+<style>
+  /* FONT e RESET BASE - Facoltativo se già incluso dal tuo template */
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* STRUTTURA GENERALE UL TIMELINE */
+  .container-fluid ul.timeline-ul {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    margin: 2rem auto; /* Per spaziatura verticale */
+    max-width: 60rem;  /* Larghezza max, regolala a piacere */
+    padding: 2rem 0;
+  }
+  
+  /* LINEA CENTRALE (verticale) - Visibile su schermi larghi */
+  .container-fluid ul.timeline-ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px; /* Spessore linea */
+    background: var(--bs-primary, #0d6efd); /* Usa la var bootstrap "bs-primary" o #0d6efd se preferisci */
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  /* STILI PER LI */
+  .container-fluid ul.timeline-ul li {
+    position: relative;
+    width: calc(50% - 2rem);
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+    background: #f8f9fa; /* bg-light */
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
+    /* Per effetto zig-zag su schermi larghi */
+    /* Di default, spostiamo tutto a sinistra */
+    left: 0;
+    /* Il “--accent-color” serve se vuoi cambiare colore su ogni step */
+  }
+  
+  /* COLORE DEL BORDO SU OGNI CARD (FACOLTATIVO) */
+  .container-fluid ul.timeline-ul li {
+    border-left: 0.25rem solid var(--accent-color, #0d6efd); 
+  }
+  .container-fluid ul.timeline-ul li:nth-child(2) {
+    border-left: 0rem solid var(--accent-color, #0d6efd); 
+    border-right: 0.25rem solid var(--accent-color, #FBCA3E);
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    /* Shift it left */
+    margin-right: 2rem; /* Adjust for more/less shift */
+    transform: translateX(10%); /* Fine-tune for better alignment */
+  }
+  .container-fluid ul.timeline-ul li:nth-child(4) {
+    border-left: 0rem solid var(--accent-color, #0d6efd); 
+    border-right: 0.25rem solid var(--accent-color, #FBCA3E);
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    /* Shift it left */
+    margin-right: 2rem; /* Adjust for more/less shift */
+    transform: translateX(10%); /* Fine-tune for better alignment */
+  }
+  
+  /* Alternanza L/R su schermi >= 768px (puoi regolare la media query se preferisci) */
+  @media (min-width: 768px) {
+    .container-fluid ul.timeline-ul li {
+      width: 45%;
+    }
+    .container-fluid ul.timeline-ul li:nth-child(odd) {
+      left: 0;
+    }
+    .container-fluid ul.timeline-ul li:nth-child(even) {
+      left: 50%; 
+    }
+  }
+  
+  /* PALLINO CENTRALE (connessione con la linea) */
+  .container-fluid ul.timeline-ul li::before {
+    content: "";
+    position: absolute;
+    top: 1.5rem; /* regola verticalmente la posizione del pallino */
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    border: 0.25rem solid var(--accent-color, #0d6efd);
+    border-radius: 50%;
+    /* align pallino with the line */
+    left: calc(50% - 0.5rem); 
+  }
+  
+  /* SHIFT PALLINO A DESTRA O SINISTRA PER ODD/EVEN */
+  @media (min-width: 768px) {
+    .container-fluid ul.timeline-ul li:nth-child(odd)::before {
+      transform: translateX(-50%);
+    }
+    .container-fluid ul.timeline-ul li:nth-child(even)::before {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* STILE DATE/TITLE/DESCR */
+  .container-fluid ul.timeline-ul li .date {
+    font-weight: 700;
+    color: #0d6efd; /* text-primary */
+    margin-bottom: 0.5rem;
+  }
+  .container-fluid ul.timeline-ul li .title {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: #1d1d1d;
+    font-weight: 500;
+  }
+  .container-fluid ul.timeline-ul li .descr {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* SERVICE-ICON STILE (come da snippet) */
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bs-primary, #0d6efd);
+    border-radius: 50%;
+  }
+  .service-icon i {
+    font-size: 1.5rem;
+  }
+  
+  /* CTA containers finali */
+  .cta-row .col-lg-6 {
+    margin-top: 2rem;
+  }
+  
+  </style>
+  
+  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <!-- TITOLO E SOTTOTITOLO SEZIONE -->
+      <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+        <h5 class="fw-bold text-primary text-uppercase">Come Funziona</h5>
+        <h1 class="mb-0">Costruiamo assieme i tuoi agenti AI</h1>
+      </div>
+  
+      <!-- UL TIMELINE -->
+      <ul class="timeline-ul">
+  
+        <li class = "wow fadeInRight" data-wow-delay="0.3s" style="--accent-color:#41516C;">
+          <div class="service-icon">
+            <i class="fa fa-search text-white"></i>
+          </div>
+          <div class="date">Analisi e Mappatura</div>
+          <div class="title">Step 1</div>
+          <div class="descr">
+            Studiamo i processi chiave della tua azienda e mappiamo le attività ripetitive o complesse 
+            che impegnano gran parte del tuo personale.
+          </div>
+        </li>
+  
+        <li class = "wow fadeInLeft" data-wow-delay="0.3s" style="--accent-color:#FBCA3E;">
+          <div class="service-icon">
+            <i class="fa fa-cogs text-white"></i>
+          </div>
+          <div class="date">Progettazione Su Misura</div>
+          <div class="title">Step 2</div>
+          <div class="descr">
+            Sviluppiamo agenti AI capaci di apprendere le regole, i flussi documentali e le procedure interne, 
+            integrandosi nei tuoi sistemi.
+          </div>
+        </li>
+  
+        <li class = "wow fadeInRight" data-wow-delay="0.3s" style="--accent-color:#E24A68;">
+          <div class="service-icon">
+            <i class="fa fa-rocket text-white"></i>
+          </div>
+          <div class="date">Implementazione Rapida</div>
+          <div class="title">Step 3</div>
+          <div class="descr">
+            In poche settimane, le tue risorse digitali sono già operative, riducendo i tempi di go-live 
+            e ottimizzando i risultati.
+          </div>
+        </li>
+  
+        <li class = "wow fadeInLeft" data-wow-delay="0.3s" style="--accent-color:#1B5F8C;">
+          <div class="service-icon">
+            <i class="fa fa-user-graduate text-white"></i>
+          </div>
+          <div class="date">Formazione e Supporto</div>
+          <div class="title">Step 4</div>
+          <div class="descr">
+            Forniamo training al tuo team e offriamo supporto costante 
+            per garantire che gli agenti AI continuino a crescere e migliorare.
+          </div>
+        </li>
+  
+      </ul>
+  
+      <!-- CTA FINALI -->
+      <div class="col-lg-6 mx-auto wow fadeInUp" data-wow-delay="0.7s">
+        <div class="bg-dark rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
+          <h3 class="text-white mb-3">Prenota una demo gratuita</h3>
+          <p class="text-white mb-3">
+            Scopri in azione gli agenti AI e valuta come possono migliorare i tuoi processi.
+          </p>
+          <a href="quote.html" class="btn btn-primary py-2 px-4 mt-3">Prenota ora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- UL Timeline Zig-Zag End -->
+  
+
+
+
+
+  <!-- Pricing Plan Start -->
+  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+        <h5 class="fw-bold text-primary text-uppercase">Piani tariffari</h5>
+        <h1 class="mb-0">Abbonamenti mensili flessibili per ogni dimensione aziendale</h1>
+      </div>
+      <div class="row g-0">
+        <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+          <div class="bg-light rounded">
+            <div class="border-bottom py-4 px-5 mb-4">
+              <h4 class="text-primary mb-1">Starter Plan</h4>
+              <small class="text-uppercase">Per piccole imprese</small>
+            </div>
+            <div class="p-5 pt-0">
+              <h1 class="display-5 mb-3">
+                <small class="align-top" style="font-size: 22px; line-height: 45px;">€</small>99.00<small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+              </h1>
+              <div class="d-flex justify-content-between mb-3"><span>Chatbot AI</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Reportistica chatbot</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Assistenza Tecnica</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Supporto 24/7</span><i class="fa fa-check text-primary pt-1"></i></div>
+             <br><br><br><br><br>
+              <a href="quote.html" class="btn btn-primary py-2 px-4 mt-4">Ordina ora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+          <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
+            <div class="border-bottom py-4 px-5 mb-4">
+              <h4 class="text-primary mb-1">Professional Plan</h4>
+              <small class="text-uppercase">Per medie e grandi imprese</small>
+            </div>
+            <div class="p-5 pt-0">
+              <h1 class="display-5 mb-3">
+                <small class="align-top" style="font-size: 22px; line-height: 45px;">€</small>149.00<small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+              </h1>
+              <!-- class="fa fa-times text-danger pt-1"></i></div> -->
+              <div class="d-flex justify-content-between mb-3"><span>Chatbot AI</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Reportistica chatbot</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Assistenza Tecnica</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Supporto 24/7</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Agente AI</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Dashboard Operativa</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-2"><span>Formazione & Consulenze</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <a href="quote.html" class="btn btn-primary py-2 px-4 mt-4">Ordina ora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+          <div class="bg-light rounded">
+            <div class="border-bottom py-4 px-5 mb-4">
+              <h4 class="text-primary mb-1">Custom Plan</h4>
+              <br>
+            </div>
+            <div class="p-5 pt-0">
+              <h1 class="display-5 mb-3">
+                <span style="font-size: 22px; line-height: 18px;">Hai delle esigenze specifiche per la tua azienda?<br>Contattaci per una consulenza gratuita</span>
+              </h1>
+              <br>
+              <br>
+              <!--  <div class="d-flex justify-content-between mb-3"><span>Chatbot AI</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Assistenza Tecnica</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Supporto 24/7</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-2"><span>Formazione & Consulenze</span><i class="fa fa-check text-primary pt-1"></i></div> -->
+              <a href="quote.html" class="btn btn-primary py-2 px-4 mt-4">Ordina ora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pricing Plan End -->
+
+  <!-- Request Demo Start -->
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <div class="section-title position-relative pb-3 mb-5">
+              <h5 class="fw-bold text-primary text-uppercase">Richiedi una Demo</h5>
+              <h1 class="mb-0">Hai domande o vuoi scoprire di più sulle nostre soluzioni AI?</h1>
+            </div>
+            <div class="row gx-3">
+              <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Risposta in 24 ore</h5>
+              </div>
+              <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>Supporto Telefonico 24/7</h5>
+              </div>
+            </div>
+            <p class="mb-4">Contattaci per una demo gratuita e scopri come i nostri agenti AI possono trasformare il tuo business.</p>
+            <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
+              <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                <i class="fa fa-phone-alt text-white"></i>
+              </div>
+              <div class="ps-4">
+                <h5 class="mb-2">Contattaci per qualsiasi informazione</h5>
+                <h4 class="text-primary mb-0">+39 342 507 0077</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
+              <form>
+                <div class="row g-3">
+                  <div class="col-xl-12">
+                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                  </div>
+                  <div class="col-12">
+                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                  </div>
+                  <div class="col-12">
+                    <select class="form-select bg-light border-0" style="height: 55px;">
+                      <option selected>Select A Service</option>
+                      <option value="1">Chatbot AI</option>
+                      <option value="2">Assistenza Tecnica</option>
+                      <option value="3">Soluzioni Personalizzate</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-dark w-100 py-3" type="submit">Richiedi una Demo</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- Request Demo End -->
+
+  <!-- Testimonial Start -->
+      <!--  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
+                <h1 class="mb-0">Cosa Dicono i Nostri Clienti</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                    <img class="img-fluid rounded" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" alt="Client">
+                    <div class="ps-4">
+                    <h4 class="text-primary mb-1">Cliente 1</h4>
+                    <small class="text-uppercase">CEO, Azienda X</small>
+                    </div>
+                </div>
+                <div class="pt-4 pb-5 px-5">
+                    Le soluzioni di hemz hanno rivoluzionato il nostro approccio al customer care.
+                </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                    <img class="img-fluid rounded" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" alt="Client">
+                    <div class="ps-4">
+                    <h4 class="text-primary mb-1">Cliente 2</h4>
+                    <small class="text-uppercase">Manager, Azienda Y</small>
+                    </div>
+                </div>
+                <div class="pt-4 pb-5 px-5">
+                    Un partner affidabile e innovativo che ha portato la nostra azienda al prossimo livello.
+                </div>
+                </div>
+            </div>
+            </div>
+        </div> -->
+  <!-- Testimonial End -->
+
+  <!-- Team Start -->
+  <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+        <h5 class="fw-bold text-primary text-uppercase">Membri di hemz</h5>
+        <h1 class="mb-0">Il Nostro Team di Esperti</h1>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+          <div class="team-item bg-light rounded overflow-hidden">
+            <div class="team-img position-relative overflow-hidden">
+              <img class="img-fluid w-100" src="img/team-1.jpg" alt="Team Member">
+              <div class="team-social">
+                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+              </div>
+            </div>
+            <div class="text-center py-4">
+              <h4 class="text-primary">Nome Cognome</h4>
+              <p class="text-uppercase m-0">Ruolo</p>
+            </div>
+          </div>
+        </div> -->
+        <!-- Altri membri del team -->
+    <!--  </div>
+    </div>
+  </div> -->
+  <!-- Team End -->
+
+  <!-- Blog Start -->
+          <!--  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="container py-5">
+                <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                  <h5 class="fw-bold text-primary text-uppercase">Latest Blog</h5>
+                  <h1 class="mb-0">Ultimi Articoli e Approfondimenti</h1>
+                </div>
+                <div class="row g-5">
+                  <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                      <div class="blog-img position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/blog-1.jpg" alt="Blog Post">
+                        <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">AI & Automation</a>
+                      </div>
+                      <div class="p-4">
+                        <div class="d-flex mb-3">
+                          <small class="me-3"><i class="far fa-user text-primary me-2"></i>hemz Team</small>
+                          <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                        </div>
+                        <h4 class="mb-3">Innovazione nell’automazione aziendale</h4>
+                        <p>Scopri come le soluzioni AI di hemz stanno rivoluzionando il settore.</p>
+                        <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div> -->
+                  <!-- Altri articoli -->
+              <!--  </div>
+              </div>
+            </div> -->
+  <!-- Blog End -->
+
+  <!-- Vendor Start -->
+  <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5 mb-5">
+      <div class="bg-white">
+        <div class="owl-carousel vendor-carousel">
+          <img src="img/vendor-1.jpg" alt="">
+          <img src="img/vendor-2.jpg" alt="">
+          <img src="img/vendor-3.jpg" alt="">
+          <img src="img/vendor-4.jpg" alt="">
+          <img src="img/vendor-5.jpg" alt="">
+          <img src="img/vendor-6.jpg" alt="">
+          <img src="img/vendor-7.jpg" alt="">
+          <img src="img/vendor-8.jpg" alt="">
+          <img src="img/vendor-9.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Vendor End -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+      <div class="row gx-5">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+            <a href="index.html" class="navbar-brand">
+              <h1 class="m-0 text-white" font-weight="normal" style="font-family: 'Glacial Indifference', sans-serif;"><i class="fa me-2"></i>hemz <br> human emulators</h1>
+            </a>
+            <p class="mt-3 mb-4" >hemz è la startup che sta rivoluzionando l’automazione aziendale con soluzioni AI all’avanguardia.</p>
+            <!-- <form action="">
+              <div class="input-group">
+                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                <button class="btn btn-dark">Sign Up</button>
+              </div>
+            </form> -->
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-6">
+          <div class="row gx-5">
+            <div class="col-lg-4 col-md-12 pt-5 mb-5">
+              <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                <h3 class="text-light mb-0">Rimani in contatto</h3>
+              </div>
+              <div class="d-flex mb-2">
+                <i class="bi bi-geo-alt text-primary me-2"></i>
+                <p class="mb-0">Via Giolitti 63, Pesaro, PU, Italia</p>
+              </div>
+              <div class="d-flex mb-2">
+                <i class="bi bi-envelope-open text-primary me-2"></i>
+                <p class="mb-0">info@hemz.ai</p>
+              </div>
+              <div class="d-flex mb-2">
+                <i class="bi bi-telephone text-primary me-2"></i>
+                <p class="mb-0">+39 342 507 0077</p>
+              </div>
+              <div class="d-flex mt-4">
+                <!-- <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a> -->
+                <a class="btn btn-primary btn-square me-2" href="https://www.linkedin.com/company/hemz.it/" target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                <!-- <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a> -->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+              <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                <h3 class="text-light mb-0">Links</h3>
+              </div>
+              <div class="link-animated d-flex flex-column justify-content-start">
+                <!-- <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a> -->
+                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Chi siamo</a>
+                <!-- <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a> -->
+                <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Servizi</a>
+                <!-- <a class="text-light mb-2" href="price.html"><i class="bi bi-arrow-right text-primary me-2"></i>Piano prezzi</a> -->
+                <a class="text-light mb-2" href="quote.html"><i class="bi bi-arrow-right text-primary me-2"></i>Richiedi demo</a>
+                <!-- <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contattaci</a> -->
+              </div>
+            </div>
+            <!-- <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+              <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                <h3 class="text-light mb-0">Popular Links</h3>
+              </div>
+              <div class="link-animated d-flex flex-column justify-content-start">
+                <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
+                <a class="text-light mb-2" href="price.html"><i class="bi bi-arrow-right text-primary me-2"></i>Piano prezzi</a>
+                <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contattaci</a>
+                <a class="text-light" href="quote.html"><i class="bi bi-arrow-right text-primary me-2"></i>Richiedi demo</a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-white" style="background: #061429;">
+    <div class="container text-center">
+      <div class="row justify-content-end">
+        <div class="col-lg-8 col-md-6">
+          <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+            <p class="mb-0">&copy; <a class="text-white border-bottom" href="index.html">hemz - human emulators</a>. All Rights Reserved.
+              <!-- Crediti originali mantenuti -->
+              Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
