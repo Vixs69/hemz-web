@@ -123,7 +123,7 @@
         </div> 
                                             <!-- <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button> -->
         <!-- Azione modificata: invece di "Download Pro Version" -->
-        <a href="quote.html" class="btn btn-primary py-2 px-4 ms-3">Comincia ora</a>
+        <a href="quote.html" class="btn btn-primary py-2 px-4 ms-3">Prova subito</a>
       </div>
     </nav>
 
@@ -511,7 +511,39 @@
   .cta-row .col-lg-6 {
     margin-top: 2rem;
   }
-  
+
+  /* su telefono toglie linea centrale e le mette 2 sopra e 2 sotto */
+  @media (max-width: 768px) {
+    /* Rimuove la linea centrale */
+    .container-fluid ul.timeline-ul::before {
+        display: none;
+    }
+
+    /* Imposta il contenitore come griglia con due colonne */
+    .container-fluid ul.timeline-ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Due colonne uguali */
+        gap: 1rem; /* Spazio tra le colonne */
+        justify-content: center;
+    }
+
+    /* Adatta le card alla griglia */
+    .container-fluid ul.timeline-ul li {
+        width: 100%;
+        left: auto !important;
+        margin: 0;
+        border-left: 0.25rem solid var(--accent-color, #0d6efd);
+        border-right: none;
+        transform: none;
+    }
+
+    /* Assicura che il pallino delle card sia allineato correttamente */
+    .container-fluid ul.timeline-ul li::before {
+        left: 1rem;
+        transform: translateX(0);
+    }
+}
+ 
   </style>
   
   <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -665,6 +697,17 @@
       </div>
     </div>
   </div>
+
+  <style>
+    @media (max-width: 991px) {
+      .row.g-0 {
+          gap: 1rem; /* Aggiunge spazio tra le card */
+      }
+      .col-lg-4 {
+          margin-bottom: 1rem; /* Aggiunge spazio sotto ogni tabella */
+      }
+  }
+  </style>
   <!-- Pricing Plan End -->
 
   <!-- Request Demo Start -->
