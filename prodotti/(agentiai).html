@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>hemz - agenti ai</title>
+    <link rel="icon" type="image/png" href="../img/h.png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <style>
+        html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        }
+        :root {
+          --primary-color: #326898;
+          --secondary-color: #f6fafb;
+        }
+        .bg-primary {
+          background-color: var(--primary-color) !important;
+        }
+        .text-primary {
+          color: var(--primary-color) !important;
+        }
+        .bg-light {
+          background-color: var(--secondary-color) !important;
+        }
+      </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+          <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+              <!-- Aggiornato indirizzo, telefono ed email -->
+              <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i><a href="https://www.google.com/maps/place/Via+Giovanni+Giolitti,+63,+61122+Pesaro+PU/@43.8964102,12.8954996,15z/data=!3m1!4b1!4m6!3m5!1s0x132d1956de6f9231:0xcbd7b9bb6a84f113!8m2!3d43.8963952!4d12.9057779!16s%2Fg%2F11c4ld2jy_?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"  target="_blank">Via Giolitti 63, Pesaro, PU, Italia</a></small>
+              <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i><a href="tel:+393425070077">+39 342 507 0077</a></small>
+          <small class="text-light"><i class="fa fa-envelope-open me-2"></i><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@hemz.eu" target="_blank">info@hemz.eu</a></small>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+                              <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a> -->
+                              <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a> -->
+              <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/company/hemz.it/" target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
+              <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a> -->
+                              <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <!-- Modificato il brand -->
+                        <!-- <a href="index.html" class="navbar-brand p-0">
+                          <h1 class="m-0"><i class="fa fa-robot me-2"></i>hemz - human emulators</h1>
+                        </a> -->
+        <a href="../index.html" class="navbar-brand p-0">
+          <h1 class="m-0 d-inline" font-weight="normal" style="font-family: 'Glacial Indifference', sans-serif;">HEMZ</h1> 
+        </a>       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="../index.html" class="nav-item nav-link">Home</a>
+            <a href="../about.html" class="nav-item nav-link">Chi siamo</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Prodotti</a>
+              <div class="dropdown-menu m-0">
+                <a href="../prodotti.html" class="dropdown-item">Info prodotti</a>
+                <a href="chatbotai.html" class="dropdown-item">Chatbot AI</a>
+                <a href="agentiai.html" class="dropdown-item active">Agenti AI autonomi</a>
+                <a href="app.html" class="dropdown-item">Applicazioni AI</a>
+                <a href="formazione.html" class="dropdown-item">formazione</a>
+                <a href="training.html" class="dropdown-item">Training operativo</a>
+            </div>
+          </div> 
+          </div>
+        <!-- <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button> -->
+          
+        <!-- Azione modificata: invece di "Download Pro Version" -->
+          <a href="../quote.html" class="btn btn-primary py-2 px-4 ms-3">Prova Subito</a>
+        </div>
+      </nav>
+
+      <div class="container-fluid py-5 position-relative" style="margin-bottom: 90px;">
+        <img src="../img/herotuttipro.JPG" alt="Sfondo" class="w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover; z-index: 0;">
+        <div class="row py-5 position-relative" style="z-index: 1;">
+          <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+            <h1 class="display-4 text-white animated zoomIn">Agenti AI Autonomi</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+   <!--  <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Full Screen Search End -->
+
+
+  <!-- Service Start -->
+  <div class="container py-5 mx-auto wow zoomIn" data-wow-delay="0.01s">
+    <!-- Service Name -->
+    <div class="container py-5">
+      <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+    <h1 class="fw-bold text-primary text-uppercase">Agenti AI autonomi</h1>
+  
+    <!-- Main Headline -->
+    <h2 class="mb-0">Automatizza Interi Processi Operativi con Agenti AI che Agiscono Come Collaboratori</h2>
+      </div>
+    <!-- Introduction -->
+    <p class="lead text-center mb-5">
+      I nostri agenti AI sono progettati per svolgere attività complesse in autonomia, prendendo decisioni, eseguendo operazioni e collaborando con il tuo team. Sono ideali per aziende che vogliono superare i limiti dei semplici chatbot e implementare un'automazione profonda, reattiva e intelligente.
+    </p>
+    </div>
+    <hr>
+    
+
+
+    <div class="container py-5 mx-auto wow zoomIn" data-wow-delay="0.01s">
+    <!-- Video Demonstration -->
+    <section class="text-center py-4">
+      <h3 class="text-primary mb-4">Video Dimostrazione</h3>
+      <video width="75%" controls autoplay muted loop>
+        <source src="../video/chatbot1.mp4" type="video/mp4">
+        Il tuo browser non supporta il tag video.
+      </video>      
+      <small class="text-muted d-block mt-2">Piccola caption che spiega il video</small>
+    </section>
+  
+    <hr>
+    </div>
+
+    <!-- UL Timeline Zig-Zag Start -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+    
+      *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    
+      .container-fluid ul.timeline-ul {
+        position: relative;
+        width: 100%;
+        list-style: none;
+        margin: 2rem auto;
+        max-width: 60rem;
+        padding: 2rem 0;
+      }
+    
+      .container-fluid ul.timeline-ul::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 4px;
+        background: var(--bs-primary, #0d6efd);
+        transform: translateX(-50%);
+        border-radius: 2px;
+      }
+    
+      .container-fluid ul.timeline-ul li {
+        position: relative;
+        margin-bottom: 3rem;
+        padding: 1rem 2rem;
+        background: #f8f9fa;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-left: 0.25rem solid var(--accent-color, #0d6efd);
+      }
+    
+      .timeline-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+      }
+    
+      .container-fluid ul.timeline-ul li:nth-child(even) {
+        border-left: 0;
+        border-right: 0.25rem solid var(--accent-color, #FBCA3E);
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+        margin-right: 2rem;
+        transform: translateX(10%);
+      }
+    
+      @media (min-width: 768px) {
+        .container-fluid ul.timeline-ul {
+          display: block;
+        }
+    
+        .container-fluid ul.timeline-ul li {
+          width: 45%;
+        }
+    
+        .container-fluid ul.timeline-ul li:nth-child(odd) {
+          left: 0;
+        }
+    
+        .container-fluid ul.timeline-ul li:nth-child(even) {
+          left: 50%;
+        }
+      }
+    
+      .container-fluid ul.timeline-ul li::before {
+        content: "";
+        position: absolute;
+        top: 1.5rem;
+        width: 1rem;
+        height: 1rem;
+        background: #fff;
+        border: 0.25rem solid var(--accent-color, #0d6efd);
+        border-radius: 50%;
+        left: calc(50% - 0.5rem);
+      }
+    
+      @media (min-width: 768px) {
+        .container-fluid ul.timeline-ul li:nth-child(odd)::before,
+        .container-fluid ul.timeline-ul li:nth-child(even)::before {
+          transform: translateX(-50%);
+        }
+      }
+    
+      .container-fluid ul.timeline-ul li .date {
+        font-weight: 700;
+        color: #0d6efd;
+        margin-bottom: 0.5rem;
+      }
+    
+      .container-fluid ul.timeline-ul li .title {
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+        color: #1d1d1d;
+        font-weight: 500;
+        text-align: center;
+      }
+    
+      .container-fluid ul.timeline-ul li .descr {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #555;
+        text-align: center;
+      }
+    
+      .cta-row .col-lg-6 {
+        margin-top: 2rem;
+      }
+    
+      /* ✅ VERSIONE MOBILE A 2 COLONNE (griglia 2x2) */
+      @media (max-width: 768px) {
+        .container-fluid ul.timeline-ul::before {
+          display: none;
+        }
+    
+        .container-fluid ul.timeline-ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          justify-content: center;
+          padding: 0 1rem;
+        }
+    
+        .container-fluid ul.timeline-ul li {
+          width: 100%;
+          left: auto !important;
+          margin: 0;
+          transform: none;
+          border-left: 0.25rem solid var(--accent-color, #0d6efd);
+          border-right: none;
+        }
+    
+        .container-fluid ul.timeline-ul li:nth-child(even) {
+          border-left: 0.25rem solid var(--accent-color, #0d6efd);
+          border-right: none;
+          margin-right: 0;
+          transform: none;
+        }
+    
+        .container-fluid ul.timeline-ul li::before {
+          left: 1rem;
+          transform: translateX(0);
+        }
+    
+        .container-fluid ul.timeline-ul li .title,
+        .container-fluid ul.timeline-ul li .descr {
+          text-align: left;
+        }
+      }
+    </style>
+    
+
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.01s">
+      <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+          <h5 class="fw-bold text-primary text-uppercase">Come Funziona</h5>
+          <h1 class="mb-0">Implementiamo Agenti AI Autonomi</h1>
+        </div>
+    
+        <ul class="timeline-ul">
+          <li class="wow fadeInRight" data-wow-delay="0.01s" style="--accent-color:#41516C;">
+            <br>
+            <div class="date">Raccolta Obiettivi</div>
+            <div class="title">Step 1</div>
+            <div class="descr">Ascoltiamo i tuoi obiettivi e analizziamo le attività da automatizzare: gestione documenti, supporto clienti, gestione ordini o altro.</div>
+            <img src="../img/ai-obiettivi.jpg" alt="Step 1" class="timeline-image">
+          </li>
+    
+          <li class="wow fadeInLeft" data-wow-delay="0.01s" style="--accent-color:#FBCA3E;">
+            <br>
+            <div class="date">Progettazione Agente</div>
+            <div class="title">Step 2</div>
+            <div class="descr">Creiamo un agente AI personalizzato che conosce regole, documenti, flussi e compiti operativi, pronto a prendere decisioni in autonomia.</div>
+            <video class="timeline-image" autoplay muted loop>
+              <source src="../video/agent-progettazione.mp4" type="video/mp4">
+            </video>
+          </li>
+    
+          <li class="wow fadeInRight" data-wow-delay="0.01s" style="--accent-color:#E24A68;">
+            <br>
+            <div class="date">Test & Validazione</div>
+            <div class="title">Step 3</div>
+            <div class="descr">Testiamo l’agente su situazioni reali e lo affiniamo per garantire che svolga i suoi compiti in modo preciso, affidabile e conforme.</div>
+            <img src="../img/test-agente.jpg" alt="Step 3" class="timeline-image">
+          </li>
+    
+          <li class="wow fadeInLeft" data-wow-delay="0.01s" style="--accent-color:#1B5F8C;">
+            <br>
+            <div class="date">Attivazione e Training</div>
+            <div class="title">Step 4</div>
+            <div class="descr">L’agente entra in funzione H24. Formiamo il tuo team per monitorarlo, aggiornarlo e integrarlo sempre meglio nei flussi aziendali.</div>
+            <video class="timeline-image" autoplay muted loop>
+              <source src="../video/agent-live.mp4" type="video/mp4">
+            </video>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <div class="col-lg-6 mx-auto wow fadeInUp" data-wow-delay="0.01s">
+      <div class="bg-dark rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
+        <h3 class="text-white mb-3">Prenota una demo gratuita</h3>
+        <p class="text-white mb-3">Scopri in azione gli agenti AI e valuta come possono migliorare i tuoi processi.</p>
+        <a href="quote.html" class="btn btn-primary py-2 px-4 mt-3">Prenota ora</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- UL Timeline Zig-Zag End -->
+
+
+
+
+    <!-- <div class="container py-5 mx-auto wow zoomIn" data-wow-delay="0.01s">
+      <section class="py-4">
+        <h3 class="text-primary text-center mb-5">Come funziona nella pratica</h3>
+        <div class="row g-4 justify-content-center text-center">
+          
+          Step 1 
+
+          <div class="col-md-6 col-lg-3">
+            <div class="border p-3 rounded bg-light h-100">
+              <h5 class="mb-2">Step 1</h5>
+              <p class="mb-3">Analisi dei processi aziendali per identificare attività automatizzabili.</p>
+              <img src="img/step1.jpg" class="img-fluid rounded" alt="Analisi processi">
+            </div>
+          </div>
+    
+           Step 2 
+
+          <div class="col-md-6 col-lg-3">
+            <div class="border p-3 rounded bg-light h-100">
+              <h5 class="mb-2">Step 2</h5>
+              <p class="mb-3">Progettazione del chatbot su misura per il tuo flusso operativo.</p>
+              <video class="img-fluid rounded" controls>
+                <source src="video/step2.m4v" type="video/mp4">
+                Il tuo browser non supporta il formato video.
+              </video>
+            </div>
+          </div>
+    
+           Step 3 
+
+          <div class="col-md-6 col-lg-3">
+            <div class="border p-3 rounded bg-light h-100">
+              <h5 class="mb-2">Step 3</h5>
+              <p class="mb-3">Implementazione rapida e test in ambienti reali.</p>
+              <img src="img/step3.png" class="img-fluid rounded" alt="Implementazione AI">
+            </div>
+          </div>
+    
+          Step 4 
+          
+          <div class="col-md-6 col-lg-3">
+            <div class="border p-3 rounded bg-light h-100">
+              <h5 class="mb-2">Step 4</h5>
+              <p class="mb-3">Formazione e miglioramento continuo dopo l'avvio.</p>
+              <video class="img-fluid rounded" controls>
+                <source src="video/step4.mp4" type="video/mp4">
+                Il tuo browser non supporta il formato video.
+              </video>
+            </div>
+          </div>
+        </div>
+    
+         Scenario Reale
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-8">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Esempio concreto</h5>
+                <p class="card-text">
+                  Un nostro cliente ha integrato un chatbot per gestire le richieste d'assistenza. In 30 giorni ha ridotto del 62% le email al reparto tecnico.
+                </p>
+                <ul>
+                  <li><strong>Risultati:</strong> +35% tempo risparmiato, +40% clienti soddisfatti, ROI positivo in meno di 2 mesi.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div> -->
+    
+
+    <!-- <div class="container py-5 mx-auto wow zoomIn" data-wow-delay="0.01s">
+   
+      How It Works 
+   
+      <section class="py-4">
+      <h3 class="text-primary text-center mb-4">How It Works</h3>
+      <div class="row justify-content-center text-center">
+        <div class="col-md-3">
+          <div class="border p-3 rounded bg-light mb-3">
+            <h5>Step 1</h5>
+            <p>Simple description.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="border p-3 rounded bg-light mb-3">
+            <h5>Step 2</h5>
+            <p>Simple description.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="border p-3 rounded bg-light mb-3">
+            <h5>Step 3</h5>
+            <p>Simple description.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="border p-3 rounded bg-light mb-3">
+            <h5>Step 4</h5>
+            <p>Expected results after implementation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <hr>
+    </div>
+
+    <div class="container py-5 mx-auto wow zoomIn" data-wow-delay="0.01s">
+    
+    Real-Life Application 
+
+    <section class="py-4">
+      <h3 class="text-primary mb-4 text-center">Real-Life Application</h3>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Scenario Example</h5>
+          <p class="card-text">
+            Briefly describe how a customer used the service and the positive outcomes achieved.
+          </p>
+          <ul>
+            <li><strong>Outcome Metrics:</strong> Specific data or results that illustrate effectiveness.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  
+    <hr>
+    </div> -->
+
+    <div class="container py-5 mx-auto wow zoomIn" data-wow-delay="0.01s">
+  
+        <!-- Features & Benefits inside blue box -->
+        <section class="py-4">
+          <div class="container bg-primary text-white rounded p-4">
+            <div class="row">
+              <!-- Funzionalità Principali -->
+              <div class="col-md-6 mb-4 mb-md-0">
+                <h3 class="mb-3 text-white text-center">Funzionalità Principali</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-primary text-white border-0"><strong>Automazione End-to-End:</strong> L'agente prende decisioni, raccoglie dati, compila documenti e interagisce con utenti e fornitori.</li>
+                  <li class="list-group-item bg-primary text-white border-0"><strong>Interazioni Multi-Canale:</strong> Opera su WhatsApp, email, siti web, form aziendali e piattaforme interne.</li>
+                  <li class="list-group-item bg-primary text-white border-0"><strong>Apprendimento Continuo:</strong> Gli agenti evolvono nel tempo grazie a un sistema di feedback e memorizzazione personalizzato.</li>
+                </ul>
+              </div>
+      
+              <!-- Vantaggi Essenziali -->
+              <div class="col-md-6">
+                <h3 class="mb-3 text-white text-center">Vantaggi Essenziali</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-primary text-white border-0"><strong>Riduzione del Carico Lavorativo:</strong> Gli agenti svolgono attività ricorrenti, liberando tempo per il tuo team.</li>
+                  <li class="list-group-item bg-primary text-white border-0"><strong>Maggiore Controllo e Tracciabilità:</strong> Ogni interazione e processo viene registrato e monitorato.</li>
+                  <li class="list-group-item bg-primary text-white border-0"><strong>Adattabilità ai Requisiti:</strong> Gli agenti si personalizzano in base ai flussi specifici della tua azienda.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+      </div>
+      
+        <hr>
+      </div>
+  
+    <div class="container py-5 mx-auto wow zoomIn" data-wow-delay="0.01s">
+    <!-- Testimonials -->
+    <section class="py-4 text-center">
+      <h3 class="text-primary mb-4">Testimonials</h3>
+      <blockquote class="blockquote">
+        <p>"Short testimonial highlighting benefits and client satisfaction."</p>
+        <footer class="blockquote-footer">Client Name, <cite title="Company">Company</cite></footer>
+      </blockquote>
+    </section>
+  
+    <hr>
+    </div>
+
+    <div class="container py-5 mx-auto wow zoomIn" data-wow-delay="0.01s">
+    <!-- FAQ -->
+    <section class="py-4">
+      <h3 class="text-primary mb-4 text-center">FAQ</h3>
+      <div class="accordion accordion-flush" id="serviceFAQ">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Il chatbot capisce davvero cosa gli scrivo o risponde a caso?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#serviceFAQ">
+            <div class="accordion-body">Il nostro chatbot analizza le parole che usi e capisce il senso della frase, poi sceglie la risposta più utile tra quelle che ha imparato o che ha ricevuto come istruzioni. Più è allenato, più sembra una persona vera.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Serve qualcuno che lo controlla sempre o fa tutto da solo?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#serviceFAQ">
+            <div class="accordion-body">Fa tutto da solo, ma puoi sempre intervenire. Se riceve una domanda difficile, può passare la richiesta a un operatore umano o aprire un ticket. Non dorme mai e lavora 24/7 senza stancarsi.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <hr>
+  
+    <!-- Call to Action -->
+    <section class="py-4 text-center">
+      <h3 class="mb-4">Parliamo del tuo progetto</h3>
+      <a href="../quote.html" class="btn btn-primary btn-lg">Contattaci per un preventivo</a>
+    </section>
+  </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+    <!-- Testimonial Start -->
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.01s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
+                <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+
+    <!-- Vendor Start -->
+   <!--  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.01s">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="img/vendor-1.jpg" alt="">
+                    <img src="img/vendor-2.jpg" alt="">
+                    <img src="img/vendor-3.jpg" alt="">
+                    <img src="img/vendor-4.jpg" alt="">
+                    <img src="img/vendor-5.jpg" alt="">
+                    <img src="img/vendor-6.jpg" alt="">
+                    <img src="img/vendor-7.jpg" alt="">
+                    <img src="img/vendor-8.jpg" alt="">
+                    <img src="img/vendor-9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Vendor End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.01s">
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+              <a href="../index.html" class="navbar-brand">
+                <h1 class="m-0 text-white brand-title">
+                    <i class="fa me-2"></i>hemz <br> human emulators
+                </h1>
+            </a>
+            
+            <style>
+                .brand-title {
+                    font-family: 'Glacial Indifference', sans-serif;
+                    font-weight: normal;
+                    text-align: center;
+                    white-space: nowrap; /* Evita il wrapping su schermi grandi */
+                    font-size: clamp(1.2rem, 4vw, 2rem); /* Regola dinamicamente la dimensione del font */
+                    line-height: 1.2; /* Ottimizza lo spazio verticale */
+                }
+            
+                @media (max-width: 768px) {
+                    .brand-title {
+                        font-size: 1.5rem; /* Riduce il font su schermi piccoli */
+                        white-space: normal; /* Permette il wrapping su mobile */
+                    }
+                }
+            </style>
+            
+              <p class="mt-3 mb-4" >hemz è la startup che sta rivoluzionando l’automazione aziendale con soluzioni AI all’avanguardia.</p>
+              <!-- <form action="">
+                <div class="input-group">
+                  <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                  <button class="btn btn-dark">Sign Up</button>
+                </div>
+              </form> -->
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <div class="row gx-5">
+              <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                  <h3 class="text-light mb-0">Rimani in contatto</h3>
+                </div>
+                <div class="d-flex mb-2">
+                  <i class="bi bi-geo-alt text-primary me-2"></i>
+                  <a href="https://www.google.com/maps/place/Via+Giovanni+Giolitti,+63,+61122+Pesaro+PU/@43.8964102,12.8954996,15z/data=!3m1!4b1!4m6!3m5!1s0x132d1956de6f9231:0xcbd7b9bb6a84f113!8m2!3d43.8963952!4d12.9057779!16s%2Fg%2F11c4ld2jy_?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"  target="_blank">Via Giolitti 63, Pesaro, PU, Italia</a>
+                </div>
+                <div class="d-flex mb-2">
+                  <i class="bi bi-envelope-open text-primary me-2"></i>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@hemz.eu" target="_blank">info@hemz.eu</a>
+                </div>
+                <div class="d-flex mb-2">
+                  <i class="bi bi-telephone text-primary me-2"></i>
+                  <a href="tel:+393425070077">+39 342 507 0077</a>
+                </div>
+                <div class="d-flex mb-2">
+                  <i class="bi bi-cash-stack text-primary me-2"></i>
+                  <p class="mb-0">P.IVA 02833410414</p>
+                </div>
+                <div class="d-flex mt-4">
+                  <!-- <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a> -->
+                  <a class="btn btn-primary btn-square me-2" href="https://www.linkedin.com/company/hemz.it/" target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                  <!-- <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a> -->
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                  <h3 class="text-light mb-0">Links</h3>
+                </div>
+                <div class="link-animated d-flex flex-column justify-content-start">
+                  <a class="text-light mb-2" href="../index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                  <a class="text-light mb-2" href="../about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Chi siamo</a>
+                  <!-- <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a> -->
+                  <!-- <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Servizi</a> -->
+                  <!-- <a class="text-light mb-2" href="price.html"><i class="bi bi-arrow-right text-primary me-2"></i>Piano prezzi</a> -->
+                  <a class="text-light mb-2" href="../quote.html"><i class="bi bi-arrow-right text-primary me-2"></i>Richiedi demo</a>
+                  <!-- <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contattaci</a> -->
+                </div>
+              </div>
+              <!-- <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                  <h3 class="text-light mb-0">Popular Links</h3>
+                </div>
+                <div class="link-animated d-flex flex-column justify-content-start">
+                  <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
+                  <a class="text-light mb-2" href="price.html"><i class="bi bi-arrow-right text-primary me-2"></i>Piano prezzi</a>
+                  <a class="text-light mb-2" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contattaci</a>
+                  <a class="text-light" href="quote.html"><i class="bi bi-arrow-right text-primary me-2"></i>Richiedi demo</a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+      <div class="container text-center">
+        <div class="row justify-content-end">
+          <div class="col-lg-8 col-md-6">
+            <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+              <p class="mb-0"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html> 
